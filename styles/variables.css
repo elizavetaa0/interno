@@ -1,0 +1,10 @@
+:root {
+  --main-color: #292F36;
+  --accent-color: #CDA274;
+  --accent-bg-color: #F4F0EC;
+  --font-wgh: 400;
+  --header-font: 'DM Serif Display';
+  --text-font: 'Jost';
+  --padding-inline: clamp(2.5rem, 0.7331rem + 7.5188vw, 7.5rem);
+  --margin-mobile: 3rem;
+}

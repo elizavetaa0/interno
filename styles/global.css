@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+body {
+  margin: 0;
+  min-inline-size: 375px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
