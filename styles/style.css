@@ -17,6 +17,19 @@
   inline-size: clamp(6.25rem, 4.875rem + 6.875vw, 11.0625rem);
 }
 
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin-block: 5px;
+  border-radius: 2px;
+}
+
 .menu__list {
   display: flex;
   gap: 40px;
@@ -654,7 +667,40 @@ a:hover {
 
 
 @media screen and (width <= 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
   .menu__list {
+    display: none;
+  }
+
+  .close-symbol {
+    cursor: pointer;
+    inline-size: 20px;
+    block-size: 3px;
+    position: relative;
+  }
+
+  .close-symbol div {
+    position: absolute;
+    inline-size: 100%;
+    block-size: 3px;
+    background-color: var(--main-color);
+    border-radius: 2px;
+  }
+  
+  .close-symbol div:first-child {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  .close-symbol div:nth-child(2) {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .menu__list-showed {
     margin-inline-start: 15px;
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
